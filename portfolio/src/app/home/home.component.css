@@ -1,0 +1,15 @@
+.hello {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hello:hover {
+    transform: scale(1.4) translateX(50px);
+}
+
+.hello-hand {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hello:hover .hello-hand {
+    transform: rotate(35deg) scale(1.2) translateY(-10px);
+}

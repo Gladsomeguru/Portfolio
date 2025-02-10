@@ -1,0 +1,33 @@
+<div class="container px-4 mt-md-5 mt-0 ">
+    <div class="row justify-content-center">
+        @for(slide of data;track slide){
+            <div class="col-md-10 col-12 blue-border rounded-4 mb-5">
+                <div class="container px-0">
+                    <div class="row">
+                        <div class="col-md-5 col-12 p-md-5 p-3 order-md-1 order-2">
+                            <div class="d-flex flex-column gap-3 px-0 justify-content-center align-items-center h-100">
+                                <img class="object-fit-cover thumbnail w-100 rounded-3 shadow" src="assets/{{slide.assets[0]}}"
+                                    alt="eyecan">
+                                <img class="object-fit-cover thumbnail w-100 rounded-3 shadow" src="assets/{{slide.assets[1]}}"
+                                    alt="eyecan">
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-12 p-md-5 p-3 pb-0 order-md-2 order-1">
+                            <div class="d-flex flex-column gap-3 px-0 justify-content-center align-items-center h-100">
+                                <div class="d-flex align-items-end gap-4 mb-2">
+                                    @if(slide.logo){
+                                        <img class="object-fit-cover thumbnail w-25 rounded-3 shadow-sm" src="assets/{{slide.logo}}" alt="">
+                                    }
+                                    <h2 class="secondary fw-bold mb-0">{{slide.title}}</h2>
+                                 </div>
+                                
+                                <p>{{slide.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="container px-4 page-bg" id="Projects">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <h3 class="text-md-center text-start fw-bold mb-md-5 mb-3">Projects</h3>
+        </div>
+        <div class="col-md-5 col-12 px-md-5 px-2">
+            <div class="project-thumbnail position-relative cursor-pointer">
+                <div class="project-thumbnail w-100 mb-3">
+                    <img class="object-fit-cover thumbnail w-100 rounded-4" src="assets/patent.png" alt="patents" />
+                </div>
+                <div
+                    class="position-absolute thumbnail w-100 top-0 d-flex flex-column align-items-center mask z-3 rounded-4 ">
+                    <h6 class="text-white fw-bold count">1</h6>
+                    <h4 class="fw-bold orange">Patent</h4>
+                </div>
+            </div>
+
+            <div class="project-thumbnail position-relative cursor-pointer">
+                <div class="project-thumbnail w-100 mb-3">
+                    <img class="object-fit-cover thumbnail w-100  rounded-4 " src="assets/handshake.png" alt="services" />
+                </div>
+                <div class="position-absolute thumbnail w-100 top-0 d-flex flex-column align-items-center mask z-3 rounded-4 ">
+                    <h6 class="text-white fw-bold count">2+</h6>
+                    <h4 class="fw-bold orange">Services</h4>
+                </div>
+            </div>
+
+            <div class="project-thumbnail position-relative cursor-pointer">
+                <div class="project-thumbnail w-100 mb-3">
+                    <img class="object-fit-cover thumbnail w-100 rounded-4" src="assets/clients.png" alt="clients" />
+                </div>
+                <div
+                    class="position-absolute thumbnail w-100 top-0 d-flex flex-column align-items-center mask z-3 rounded-4 ">
+                    <h6 class="text-white fw-bold count">7+</h6>
+                    <h4 class="fw-bold orange">Projects</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-12 px-md-5 px-2 mt-md-0 mt-4">
+            <h5 class="fw-bold">Skills</h5>
+            @for(skill of skillSet;track skill){
+                <div class="mb-3">
+                    <p class="mb-2 fw-bold secondary">{{skill.category}}</p>
+                    <p class="mb-0">
+                        {{skill.skills}}
+                    </p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<app-slider [data]="slides"></app-slider>
