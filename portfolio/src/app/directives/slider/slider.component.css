@@ -1,3 +1,14 @@
-.blue-border{
+.blue-border {
     border: 2px solid #705CF0;
+    /* min-height: 410px; */
 }
+.thumbnail{
+    height: fit-content;
+}
+
+/* @media (max-width: 800px) {
+    .blue-border {
+        height: 870px;
+        overflow: hidden;
+    }
+} */

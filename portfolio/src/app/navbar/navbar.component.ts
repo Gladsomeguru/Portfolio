@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-navItems:any=['Home', 'About', 'Projects','Contact']
+navItems:any=['Home', 'About', 'Projects','Contact Me']
 }
