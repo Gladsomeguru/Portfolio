@@ -28,7 +28,6 @@
               }
             ],
             "styles": [
-              "public/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": ["public/js/bootstrap.bundle.min.js"],
