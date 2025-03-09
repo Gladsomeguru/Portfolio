@@ -1,0 +1,53 @@
+<div class="container px-4 mt-md-5 mt-0 ">
+    <div class="row justify-content-center mb-5">
+        <div id="achivements" class="carousel slide">
+            <div class="carousel-inner">
+                @for(slide of data; track slide;let i=$index) {
+                <div class="carousel-item" [class.active]="i==0">
+                    <div class="col-md-10 col-12 blue-border rounded-4 mx-auto">
+                        <div class="container px-0 h-100 flex-grow-1 ">
+                            <div class="row">
+                                <div class="col-lg-5 col-12 p-4 p-lg-5 p-xs-2 pt-md-2 pe-lg-2 order-lg-1 order-2 h-100">
+                                    <div
+                                        class="d-flex flex-column gap-3 px-0 justify-content-center align-items-center h-100 w-100">
+                                        <img class="object-md-fit-scale object-fit-cover  thumbnail w-md-auto w-100 rounded-3 shadow"
+                                            src="assets/{{slide.assets[0]}}" alt="eyecan">
+                                        <img class="object-fit-scale  thumbnail w-md-100 w-100 rounded-3 shadow"
+                                            src="assets/{{slide.assets[1]}}" alt="eyecan">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-12 p-4 p-lg-4 pb-0 pb-sm-0 p-xs-2 my-auto order-lg-2 order-1 h-100">
+                                    <div
+                                        class="d-flex flex-column flex-grow-1 gap-3 px-0 justify-content-center align-items-center h-100">
+                                        <div class="d-flex align-items-end gap-4 mb-2">
+                                            @if(slide.logo) {
+                                            <img class="object-fit-cover w-25 rounded-3 shadow-sm"
+                                                src="assets/{{slide.logo}}" alt="">
+                                            }
+                                            <h2 class="secondary fw-bold mb-0">{{slide.title}}</h2>
+                                        </div>
+                                        <p>{{slide.description}} <br>
+                                            @if(slide.link){
+                                                <a [href]=slide.link>Click to view site</a>
+                                            }
+                                        </p>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#achivements" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-primary rounded-3" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next primary" type="button" data-bs-target="#achivements" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-primary rounded-3" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</div>

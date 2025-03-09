@@ -1,0 +1,20 @@
+.thumbnail{
+    height: 120px;
+}
+
+.count{
+    font-size: 60px;
+}
+.mask{
+    background: linear-gradient(to bottom, rgba(144, 146, 223, 0.199), rgba(78, 79, 158, 0.803), rgb(46, 47, 109));
+}
+
+.mask h6, .mask h4{
+    opacity: 1 !important;
+}
+
+@media (max-width: 767px) {
+    .thumbnail{
+        width: 100%;
+    }
+  }

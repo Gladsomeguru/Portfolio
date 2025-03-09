@@ -1,0 +1,28 @@
+.blue-border {
+    border: 2px solid #705CF0;
+}
+
+.thumbnail {
+    height: fit-content;
+}
+
+@media (max-width:375px) {
+    .blue-border {
+        height: 750px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 449px) {
+    .blue-border {
+        height: 780px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 449px) and (max-width: 990px) {
+    .blue-border {
+        height: 900px;
+        overflow: hidden;
+    }
+}
