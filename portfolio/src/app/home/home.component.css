@@ -13,3 +13,7 @@
 .hello:hover .hello-hand {
     transform: rotate(35deg) scale(1.2) translateY(-10px);
 }
+
+.content-padding{
+    padding-top: 52px !important;
+}

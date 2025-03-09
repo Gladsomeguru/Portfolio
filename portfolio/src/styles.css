@@ -45,15 +45,23 @@ html,body{
     border: 2px solid var(--secondary) !important;
 }
 
-@media (max-width: 767px) {
+
+
+@media (max-width: 769px) {
     body{
         font-size: 14px !important;
+    }
+    .content-padding{
+        padding-top: 60px !important;
     }
   }
 
   @media  (max-width: 320px) {
     body{
         font-size: 12px !important;
+    }
+    .content-padding{
+        padding-top: 60px !important;
     }
   }
 
