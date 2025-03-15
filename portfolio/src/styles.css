@@ -52,7 +52,7 @@ html,body{
         font-size: 14px !important;
     }
     .content-padding{
-        padding-top: 60px !important;
+        margin-top: 60px !important;
     }
   }
 
@@ -61,7 +61,7 @@ html,body{
         font-size: 12px !important;
     }
     .content-padding{
-        padding-top: 60px !important;
+        margin-top: 60px !important;
     }
   }
 
