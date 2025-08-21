@@ -26,3 +26,21 @@ body {
     color: var(--primary-color) !important;
     text-decoration: underline !important;
 }
+
+.card-text{
+    color: var(--primary-color) !important;
+}
+
+.smaller-font {
+    font-size: 12px !important;
+}
+
+.justified-text {
+    text-align: justify !important;
+}
+
+.drop-roles {
+    left: -32px !important;
+    transform: scale(0.7);
+    top: -4px !important;
+}
