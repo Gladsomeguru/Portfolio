@@ -46,11 +46,11 @@
         </nav>
     </header>
     <div class="content">
-        <section class="hero text-center py-md-5 py-4" id="home">
+        <section class="hero text-center py-5" id="home">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-6 align-self-center">
-                        <img src="./assets/guru.png" alt="gurunathan" width="300px">
+                        <img src="./assets/guru.png" alt="gurunathan" width="300px" class="img-fluid">
                     </div>
                     <div class="col-md-6 text-start primary-text align-self-center ps-5 pt-5">
                         <h4 class="fw-bold">Hello! 👋</h4>
@@ -66,7 +66,7 @@
                 </div>
             </div>
         </section>
-        <section class="text-center py-md-5 py-4 bg-light" id="about">
+        <section class="text-center py-5 bg-light" id="about">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-9">
@@ -92,7 +92,7 @@
                 </div>
             </div>
         </section>
-        <section class="py-md-5 py-4" id="experience">
+        <section class="py-5" id="experience">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
@@ -229,7 +229,7 @@
                     </div>
                 </div>
         </section>
-        <section class="py-md-5 py-4 bg-light" id="skills">
+        <section class="py-5 bg-light" id="skills">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
@@ -237,7 +237,7 @@
                     </div>
                     <div class="col-md-10">
                         <div
-                            class="d-flex align-items-end justify-content-center gap-3 flex-wrap pb-4 border-bottom border-2 position-relative">
+                            class="d-flex align-items-end justify-content-center gap-3 flex-wrap pb-5 border-bottom border-2 position-relative">
                             <img src="assets/angular.png" alt="Angular icon" width="50px" title="Angular">
                             <img src="assets/html.png" alt="Html icon" width="50px" title="HTML">
                             <img src="assets/css.png" alt="Css icon" width="50px" title="CSS">
@@ -251,12 +251,13 @@
                             <img src="assets/github.png" alt="Github icon" width="50px" title="GitHub">
                             <button
                                 class="position-absolute bg-light px-2 show-skills cursor-pointer shadow-sm border rounded-5"
-                                title="View skills">
-                                <i class="bi bi-chevron-down text-secondary fw-medium"></i>
+                                title="View skills" onclick="toggleSkillsLevelVisibility()">
+                                <i class="bi bi-chevron-down text-secondary fw-medium show-skill-btn"
+                                    id="skill-toggle-button"></i>
                             </button>
                         </div>
                     </div>
-                    <div class="col-md-10 d-none mt-4">
+                    <div class="col-md-10 d-none mt-4" id="skills-level">
                         <div class="container px-0 border-bottom pb-4">
                             <div class="row row-cols-1 row-cols-md-4 g-4">
                                 <div class="col px-md-2 px-4">
@@ -341,13 +342,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-10 pt-4 px-3">
+                    <div class="col-md-10 pt-5 px-3">
                         <div class="d-flex gap-2 flex-wrap justify-content-center">
                             <span class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Web
                                 Development</span>
                             <span class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">UI/UX
                                 Design</span>
-                            <span class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Responsive
+                            <span
+                                class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Responsive
                                 Design</span>
                             <span class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">API
                                 Integration</span>
@@ -355,24 +357,25 @@
                                 class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Problem
                                 Solving</span>
                             <span
-                                class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Communication</span>
+                                class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Leadership</span>
+
                             <span class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Time
-                                Management</span>
-                            <span
-                                class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Product
                                 Management</span>
                             <span
                                 class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Adaptability</span>
                             <span
+                                class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Product
+                                Management</span>
+                            <span class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5
+                                fw-normal">Creativity</span>
+                            <span
+                                class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Communication</span>
+                            <span
                                 class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Attention
                                 to Detail</span>
                             <span
-                                class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Creativity</span>
-                            <span
                                 class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Client
                                 Handling</span>
-                            <span
-                                class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Leadership</span>
                             <span
                                 class="badge bg-secondary-subtle text-dark p-2 smaller-font rounded-5 fw-normal">Continuous
                                 Learning</span>
@@ -391,6 +394,7 @@
             </div>
         </section>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
