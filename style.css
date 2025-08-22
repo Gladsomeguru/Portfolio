@@ -1,33 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-:root{
+:root {
     --primary-color: #0C0B5A;
-    --secomdary-color:#6764FF;
+    --secondary-color: #6764FF;
 }
 
+html,
 body {
     font-family: 'Poppins', sans-serif !important;
     font-size: 14px !important;
+    overflow-y: auto !important;
+    margin: 0;
+    padding: 0;
 }
 
-.primary-text{
+.content {
+    max-height: calc(100vh - 56px) !important;
+    overflow-y: auto;
+}
+
+
+.primary-text {
     color: var(--primary-color) !important;
 }
 
-.secondary-text{
-    color: var(--secomdary-color) !important;
+.secondary-text {
+    color: var(--secondary-color) !important;
 }
 
-.nav-item, .nav-link {
+.nav-item,
+.nav-link {
     color: var(--primary-color) !important;
 }
+
 .nav-item:hover {
     color: var(--primary-color) !important;
     text-decoration: underline !important;
 }
 
-.card-text{
+.card-text {
     color: var(--primary-color) !important;
 }
 
@@ -40,7 +52,20 @@ body {
 }
 
 .drop-roles {
-    left: -32px !important;
+    left: -29px !important;
     transform: scale(0.7);
     top: -4px !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cdccff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
 }
