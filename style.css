@@ -11,6 +11,7 @@ body {
     font-family: 'Poppins', sans-serif !important;
     font-size: 14px !important;
     overflow-y: auto !important;
+    overflow-x: hidden !important;
     margin: 0;
     padding: 0;
 }
@@ -20,6 +21,17 @@ body {
     overflow-y: auto;
 }
 
+.item {
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+
+.exp-item {
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}
 
 .primary-text {
     color: var(--primary-color) !important;
@@ -70,14 +82,45 @@ body {
     background: white;
 }
 
-.small-circle{
+.small-circle {
     width: 12px;
     height: 12px;
     box-sizing: content-box;
 }
-.cursor-pointer{
+
+.cursor-pointer {
     cursor: pointer !important;
 }
-.show-skills{
+
+.show-skills {
     bottom: -11px;
+}
+
+.hero {
+    overflow-x: hidden;
+    animation: slideInLeft .5s linear forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 10%;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
