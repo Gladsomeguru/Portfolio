@@ -3,7 +3,7 @@
 
 :root {
     --primary-color: #0C0B5A;
-    --secondary-color: #6764FF;
+    --secondary-color: #9694ff; /*6764FF*/
 }
 
 html,
@@ -24,13 +24,18 @@ body {
 .item {
     animation: fadeIn linear;
     animation-timeline: view();
-    animation-range: entry 0 cover 30%;
+    animation-range: entry 0 cover 40%;
 }
 
 .exp-item {
-    animation: fadeIn linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 20%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.exp-item.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .primary-text {
@@ -98,7 +103,18 @@ body {
 
 .hero {
     overflow-x: hidden;
-    animation: slideInLeft .5s linear forwards;
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+.switch{
+    cursor: pointer;
+    opacity: 25%;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.switch:hover{
+    max-width: 150px;
+    opacity: 100%;
 }
 
 @keyframes fadeIn {
