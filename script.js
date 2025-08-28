@@ -1,6 +1,6 @@
 function toggleSkillsLevelVisibility() {
   const skillsLevel = document.getElementById('skills-level');
-  const toggleButton = document.getElementById('skill-toggle-button'); 
+  const toggleButton = document.getElementById('skill-toggle-button');
   if (skillsLevel) {
     skillsLevel.classList.toggle('d-none');
   }
@@ -16,7 +16,6 @@ function toggleSkillsLevelVisibility() {
   }
 }
 
-
 const items = document.querySelectorAll(".exp-item");
 
 const observer = new IntersectionObserver((entries) => {
@@ -25,7 +24,7 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       const index = Array.from(items).indexOf(item);
       setTimeout(() => item.classList.add("show"), index * 200);
-    } 
+    }
     // else {
     //    setTimeout(() => item.classList.remove("show"),index * 200);
     // }
@@ -33,3 +32,31 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.3 });
 
 items.forEach(item => observer.observe(item));
+
+
+
+function toggleExpEdu(section) {
+  const container = document.getElementById(section);
+  if (container) {
+    const expContainer = document.getElementById('exp-container');
+    const eduContainer = document.getElementById('edu-container');
+    const expButton = document.getElementById('exp-btn');
+    const eduButton = document.getElementById('edu-btn');
+
+    if (section === 'exp-container') {
+      expButton.classList.add('active');
+      eduButton.classList.remove('active');
+      eduContainer.classList.remove('d-block');
+      eduContainer.classList.add('d-none');
+      expContainer.classList.add('d-block');
+      expContainer.classList.remove('d-none');
+    } else {
+      expButton.classList.remove('active');
+      eduButton.classList.add('active');
+      eduContainer.classList.add('d-block');
+      eduContainer.classList.remove('d-none');
+      expContainer.classList.remove('d-block');
+      expContainer.classList.add('d-none');
+    }
+  }
+}
