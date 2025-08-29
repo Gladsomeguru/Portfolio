@@ -16,22 +16,28 @@ function toggleSkillsLevelVisibility() {
   }
 }
 
-const items = document.querySelectorAll(".exp-item");
+const exp_items = document.querySelectorAll(".exp-item");
+const edu_items = document.querySelectorAll(".edu-item");
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    const item = entry.target;
-    if (entry.isIntersecting) {
-      const index = Array.from(items).indexOf(item);
-      setTimeout(() => item.classList.add("show"), index * 200);
-    }
-    // else {
-    //    setTimeout(() => item.classList.remove("show"),index * 200);
-    // }
-  });
-}, { threshold: 0.3 });
+function observeItems(items) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const item = entry.target;
+      if (entry.isIntersecting) {
+        const index = Array.from(items).indexOf(item);
+        setTimeout(() => item.classList.add("show"), index * 200);
+      }
+      // else {
+      //    setTimeout(() => item.classList.remove("show"),index * 200);
+      // }
+    });
+  }, { threshold: 0.3 });
 
-items.forEach(item => observer.observe(item));
+  items.forEach(item => observer.observe(item));
+}
+
+observeItems(exp_items);
+observeItems(edu_items);
 
 
 
@@ -60,3 +66,30 @@ function toggleExpEdu(section) {
     }
   }
 }
+
+const cards = document.querySelectorAll("#carousel-container .card-item");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+let currentIndex = 0;
+
+function showCard(index) {
+  cards.forEach((card, i) => {
+    card.classList.remove("active");
+    if (i === index) {
+      card.classList.add("active");
+    }
+  });
+}
+
+showCard(currentIndex);
+
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % cards.length;
+  showCard(currentIndex);
+});
+
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+  showCard(currentIndex);
+});
+

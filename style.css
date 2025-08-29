@@ -15,6 +15,7 @@ body {
     overflow-x: hidden !important;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .content {
@@ -29,13 +30,13 @@ body {
     animation-range: entry 0 cover 40%;
 }
 
-.exp-item {
+.exp-item,.edu-item {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity .8s ease, transform .8s ease;
 }
 
-.exp-item.show {
+.exp-item.show, .edu-item.show {
     opacity: 1;
     transform: translateY(0);
 }
@@ -78,6 +79,7 @@ body {
 
 ::-webkit-scrollbar {
     width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -136,6 +138,23 @@ body {
 }
 
 
+#carousel-container {
+    min-height: 430px;
+}
+
+.card-item {
+  display: none;         
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.card-item.active {
+  display: block;         
+  opacity: 1;
+  transform: scale(1);
+}
+
 .project-img {
     transition: all 0.3s ease-in-out;
 }
@@ -152,7 +171,7 @@ body {
 }
 
 .project-icon:hover {
-    scale: 3;
+    scale: 2;
 }
 
 @keyframes fadeIn {
