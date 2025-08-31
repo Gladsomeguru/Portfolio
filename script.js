@@ -95,19 +95,23 @@ function showCard(index) {
       card.classList.add("active");
     }
   });
-  getwindowWidth = window.innerWidth;
+  const getwindowWidth = window.innerWidth;
   if (getwindowWidth < 769 && getwindowWidth > 576) {
     carousel.style.transform = `translateX(-${index * cardWidth}px)`;
   } else if (getwindowWidth <= 576 && window.innerWidth > 320) {
     carousel.style.transform = `translateX(-${index * (cardWidth - 10)}px)`;
   } else if (getwindowWidth <= 320) {
     carousel.style.transform = `translateX(-${index * 270}px)`;
-  }
-  else {
+  } else {
     carousel.style.transform = `translateX(-${index * 85}%)`;
   }
 }
 showCard(currentIndex);
+
+// setInterval(() => {
+//   currentIndex = (currentIndex + 1) % cards.length;
+//   showCard(currentIndex);
+// }, 3000);
 
 nextBtn.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % cards.length;

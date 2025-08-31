@@ -14,13 +14,13 @@
 
 <body class="primary-text">
     <header class="position-sticky w-100 top-0 z-3">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+        <nav class="navbar navbar-expand-lg custom-bg-light shadow-sm">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold fs-4 primary-text" href="#home">Portfolio</a>
-                <button class="border-2 border rounded-2 bg-transparent d-lg-none" type="button"
+                <button class="border-2 border rounded-2 bg-transparent d-lg-none " type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon text-white"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
@@ -47,7 +47,7 @@
             </div>
         </nav>
     </header>
-    <div class="content">
+    <div class="content position-relative">
         <section class="hero text-center py-5" id="home">
             <div class="container">
                 <div class="row justify-content-center">
@@ -55,7 +55,7 @@
                         <img src="./assets/guru.png" alt="gurunathan" width="300px" class="img-fluid">
                     </div>
                     <div class="col-md-6 text-start primary-text align-self-center ps-5 pt-5">
-                        <h4 class="fw-bold">Hello! 👋</h4>
+                        <h4 class="fw-bold">Hello! <span class="wave-hand">👋</span></h4>
                         <h4 class="fw-bold">I am <span class="secondary-text">Gurunathan</span></h4>
                         <h5 class="fw-bold">a Web Developer</h5>
                         <p>Turning Ideas into Interactive Web Experiences.<br>
@@ -68,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section class="text-center py-5 bg-light" id="about">
+        <section class="text-center py-5 custom-bg-light" id="about">
             <div class="container item">
                 <div class="row justify-content-center">
                     <div class="col-md-9">
@@ -113,11 +113,11 @@
                 <div class="row justify-content-center">
                     <div class="col-md-10">
                         <div class="d-flex w-100 gap-2 justify-content-center align-items-center">
-                            <button class="border-0 bg-white fs-4 p-0 fw-bold mb-4 primary-text switch active"
+                            <button class="border-0 bg-transparent fs-4 p-0 fw-bold mb-4 primary-text switch active"
                                 id="exp-btn" onclick="toggleExpEdu('exp-container')">Experience</button>
                             <h4 class="fw-bold mb-4 text-center text-nowrap secondary-text">&</h4>
-                            <button class="border-0 bg-white fs-4 p-0 fw-bold mb-4 primary-text switch" id="edu-btn"
-                                onclick="toggleExpEdu('edu-container')">Education</button>
+                            <button class="border-0 bg-transparent fs-4 p-0 fw-bold mb-4 primary-text switch"
+                                id="edu-btn" onclick="toggleExpEdu('edu-container')">Education</button>
                         </div>
                     </div>
                     <div class="col-md-9 exp-item">
@@ -129,7 +129,7 @@
                                             class="object-fit-contain mb-3 ms-md-0 ms-2" width="130px" height="80px">
                                         <h6 class="mb-2 text-center d-md-block d-none">Group10 Technologies Pvt Ltd</h6>
                                         <span
-                                            class=" smaller-font text-muted  fw-medium mb-0 text-center d-md-block d-none">Chennai,
+                                            class=" smaller-font custom-text-muted  fw-medium mb-0 text-center d-md-block d-none">Chennai,
                                             India</span>
                                     </div>
                                 </div>
@@ -137,12 +137,12 @@
                                     <div
                                         class="d-flex flex-column gap-1 align-items-start border-start ps-3 mx-md-0 mx-3">
                                         <h6 class="mb-0 d-md-none">Group10 Technologies Pvt Ltd</h6>
-                                        <span class="text-muted fw-medium mb-0 text-center d-md-none">Chennai,
+                                        <span class="custom-text-muted fw-medium mb-0 text-center d-md-none">Chennai,
                                             India</span>
                                         <div
                                             class="d-flex flex-md-row flex-column justify-content-between w-100 position-relative">
-                                            <span class="text-dark fw-medium">Associate Software Engineer</span>
-                                            <span class="text-muted">Jun 2025 - Aug 2025</span>
+                                            <span class="custom-text-dark fw-medium">Associate Software Engineer</span>
+                                            <span class="custom-text-muted">Jun 2025 - Aug 2025</span>
                                             <div
                                                 class="position-absolute drop-roles bg-secondary-subtle rounded-circle p-2">
                                                 <div class="small-circle bg-secondary rounded-5"></div>
@@ -162,8 +162,8 @@
                                         </ul>
                                         <div
                                             class="d-flex flex-md-row flex-column justify-content-between w-100 position-relative">
-                                            <span class="text-dark fw-medium">Software Developer Trainee</span>
-                                            <span class="text-muted">Nov 2024 - May 2025</span>
+                                            <span class="custom-text-dark fw-medium">Software Developer Trainee</span>
+                                            <span class="custom-text-muted">Nov 2024 - May 2025</span>
                                             <div
                                                 class="position-absolute drop-roles bg-secondary-subtle rounded-circle p-2">
                                                 <div class="small-circle bg-secondary rounded-5"></div>
@@ -198,8 +198,8 @@
                                         <h6 class="mb-0 d-md-none">Freelancing</h6>
                                         <div
                                             class="d-flex flex-md-row flex-column justify-content-between w-100 position-relative">
-                                            <span class="text-dark fw-medium">Web Developer</span>
-                                            <span class="text-muted">Aug 2023 - Feb 2024</span>
+                                            <span class="custom-text-dark fw-medium">Web Developer</span>
+                                            <span class="custom-text-muted">Aug 2023 - Feb 2024</span>
                                             <div
                                                 class="position-absolute drop-roles bg-secondary-subtle rounded-circle p-2">
                                                 <div class="small-circle bg-secondary rounded-5"></div>
@@ -229,7 +229,7 @@
                                             width="130px">
                                         <h6 class="mb-2 d-md-block d-none text-center">Indium Software Pvt Ltd</h6>
                                         <span
-                                            class=" smaller-font text-muted  fw-medium mb-0 text-center d-md-block d-none">Chennai,
+                                            class=" smaller-font custom-text-muted  fw-medium mb-0 text-center d-md-block d-none">Chennai,
                                             India</span>
                                     </div>
                                 </div>
@@ -237,11 +237,11 @@
                                     <div
                                         class="d-flex flex-column gap-1 align-items-start border-start h-100 ps-3 mx-md-0 mx-3">
                                         <h6 class="mb-0 d-md-none">Indium Software Pvt Ltd</h6>
-                                        <span class="text-muted fw-medium mb-0 text-center d-md-none">Chennai,
+                                        <span class="custom-text-muted fw-medium mb-0 text-center d-md-none">Chennai,
                                             India</span>
                                         <div
                                             class="d-flex flex-md-row flex-column justify-content-between w-100 position-relative">
-                                            <span class="text-dark fw-medium">Intern</span> <span class="text-muted">Feb
+                                            <span class="custom-text-dark fw-medium">Intern</span> <span class="custom-text-muted">Feb
                                                 2023 - May 2023</span>
                                             <div
                                                 class="position-absolute drop-roles bg-secondary-subtle rounded-circle p-2">
@@ -265,10 +265,10 @@
                 <div class="row justify-content-center">
                     <div class="col-md-10">
                         <div class="d-flex w-100 gap-2 justify-content-center align-items-center">
-                            <button class="border-0 bg-white fs-4 p-0 fw-bold mb-4 primary-text switch" id="exp-btn"
-                                onclick="toggleExpEdu('exp-container')">Experience</button>
+                            <button class="border-0 bg-transparent fs-4 p-0 fw-bold mb-4 primary-text switch"
+                                id="exp-btn" onclick="toggleExpEdu('exp-container')">Experience</button>
                             <h4 class="fw-bold mb-4 text-center text-nowrap secondary-text">&</h4>
-                            <button class="border-0 bg-white fs-4 p-0 fw-bold mb-4 primary-text switch active"
+                            <button class="border-0 bg-transparent fs-4 p-0 fw-bold mb-4 primary-text switch active"
                                 id="edu-btn" onclick="toggleExpEdu('edu-container')">Education</button>
                         </div>
                     </div>
@@ -283,7 +283,7 @@
                                         <h6 class="mb-2 text-center d-md-block d-none">Meenakshi Sundararajan
                                             Engineering College</h6>
                                         <span
-                                            class=" smaller-font text-muted fw-medium mb-0 text-center d-md-block d-none">Chennai,
+                                            class=" smaller-font custom-text-muted fw-medium mb-0 text-center d-md-block d-none">Chennai,
                                             India</span>
                                     </div>
                                 </div>
@@ -292,13 +292,13 @@
                                         class="d-flex flex-column gap-1 align-items-start border-start h-100 ps-3 mx-md-0 mx-3">
                                         <h6 class="mb-0 d-md-none">Meenakshi Sundararajan
                                             Engineering College</h6>
-                                        <span class="text-muted fw-medium mb-0 text-center d-md-none">Chennai,
+                                        <span class="custom-text-muted fw-medium mb-0 text-center d-md-none">Chennai,
                                             India</span>
                                         <div
                                             class="d-flex flex-md-row flex-column justify-content-between w-100 position-relative">
-                                            <span class="text-dark fw-medium">B.E in Computer Science and
+                                            <span class="custom-text-dark fw-medium">B.E in Computer Science and
                                                 Engineering</span>
-                                            <span class="text-muted text-nowrap">Aug 2019 - May 2023</span>
+                                            <span class="custom-text-muted text-nowrap">Aug 2019 - May 2023</span>
                                             <div
                                                 class="position-absolute drop-roles bg-secondary-subtle rounded-circle p-2">
                                                 <div class="small-circle bg-secondary rounded-5"></div>
@@ -324,7 +324,7 @@
                                         <h6 class="mb-2 text-center d-md-block d-none">Sir M. Venkata Subba Rao MHSS
                                         </h6>
                                         <span
-                                            class="smaller-font text-muted fw-medium mb-0 text-center d-md-block d-none">Chennai,
+                                            class="smaller-font custom-text-muted fw-medium mb-0 text-center d-md-block d-none">Chennai,
                                             India</span>
                                     </div>
                                 </div>
@@ -332,12 +332,12 @@
                                     <div
                                         class="d-flex flex-column gap-1 align-items-start border-start ps-3 mx-md-0 mx-3">
                                         <h6 class="mb-0 d-md-none">Sir M. Venkata Subba Rao MHSS</h6>
-                                        <span class="text-muted fw-medium mb-0 text-center d-md-none">Chennai,
+                                        <span class="custom-text-muted fw-medium mb-0 text-center d-md-none">Chennai,
                                             India</span>
                                         <div
                                             class="d-flex flex-md-row flex-column justify-content-between w-100 position-relative">
-                                            <span class="text-dark fw-medium">HSC</span>
-                                            <span class="text-muted">Jun 2018 - Mar 2019</span>
+                                            <span class="custom-text-dark fw-medium">HSC</span>
+                                            <span class="custom-text-muted">Jun 2018 - Mar 2019</span>
                                             <div
                                                 class="position-absolute drop-roles bg-secondary-subtle rounded-circle p-2">
                                                 <div class="small-circle bg-secondary rounded-5"></div>
@@ -352,8 +352,8 @@
                                         class="d-flex flex-column gap-1 align-items-start border-start ps-3 mx-md-0 mx-3">
                                         <div
                                             class="d-flex flex-md-row flex-column justify-content-between w-100 position-relative">
-                                            <span class="text-dark fw-medium">SSLC</span>
-                                            <span class="text-muted">Jun 2016 - Mar 2017</span>
+                                            <span class="custom-text-dark fw-medium">SSLC</span>
+                                            <span class="custom-text-muted">Jun 2016 - Mar 2017</span>
                                             <div
                                                 class="position-absolute drop-roles bg-secondary-subtle rounded-circle p-2">
                                                 <div class="small-circle bg-secondary rounded-5"></div>
@@ -371,7 +371,7 @@
                 </div>
             </div>
         </section>
-        <section class="py-5 bg-light" id="skills">
+        <section class="py-5 custom-bg-light" id="skills">
             <div class="container item">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
@@ -399,9 +399,9 @@
                             <img src="assets/jasmine_karma.png" alt="Jasmine+Karma icon" width="100px"
                                 title="Jasmine + Karma" class="skill-icon">
                             <button
-                                class="position-absolute bg-light px-2 show-skills cursor-pointer shadow-sm border rounded-5"
+                                class="position-absolute custom-bg-light px-2 show-skills cursor-pointer shadow-sm border rounded-5"
                                 title="View skills" onclick="toggleSkillsLevelVisibility()">
-                                <i class="bi bi-chevron-down text-secondary fw-medium show-skill-btn"
+                                <i class="bi bi-chevron-down custom-text-dark fw-medium show-skill-btn"
                                     id="skill-toggle-button"></i>
                             </button>
                         </div>
@@ -411,88 +411,88 @@
                             <div class="row row-cols-1 row-cols-md-3 g-4">
                                 <div class="col px-md-2 px-4">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h6 class="text-dark mb-0">HTML/CSS</h6> <span class="text-muted">95%</span>
+                                        <h6 class="custom-text-dark mb-0">HTML/CSS</h6> <span class="custom-text-muted">95%</span>
                                     </div>
                                     <progress value="95" max="100" aria-label="HTML/CSS proficiency"
                                         style="width: 100%; height: 12px;"></progress>
                                 </div>
                                 <div class="col px-md-2 px-4 mt-md-4 mt-2">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h6 class="text-dark mb-0">JavaScript</h6>
-                                        <span class="text-muted">70%</span>
+                                        <h6 class="custom-text-dark mb-0">JavaScript</h6>
+                                        <span class="custom-text-muted">70%</span>
                                     </div>
                                     <progress value="70" max="100" aria-label="JavaScript proficiency"
                                         style="width: 100%; height: 12px;"></progress>
                                 </div>
                                 <div class="col px-md-2 px-4 mt-md-4 mt-2">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h6 class="text-dark mb-0">Bootstrap</h6>
-                                        <span class="text-muted">85%</span>
+                                        <h6 class="custom-text-dark mb-0">Bootstrap</h6>
+                                        <span class="custom-text-muted">85%</span>
                                     </div>
                                     <progress value="85" max="100" aria-label="Bootstrap proficiency"
                                         style="width: 100%; height: 12px;"></progress>
                                 </div>
                                 <div class="col px-md-2 px-4 mt-md-4 mt-2">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h6 class="text-dark mb-0">Angular</h6>
-                                        <span class="text-muted">70%</span>
+                                        <h6 class="custom-text-dark mb-0">Angular</h6>
+                                        <span class="custom-text-muted">70%</span>
                                     </div>
                                     <progress value="70" max="100" aria-label="Angular proficiency"
                                         style="width: 100%; height: 12px;"></progress>
                                 </div>
                                 <div class="col px-md-2 px-4 mt-md-4 mt-2">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h6 class="text-dark mb-0">Java</h6>
-                                        <span class="text-muted">60%</span>
+                                        <h6 class="custom-text-dark mb-0">Java</h6>
+                                        <span class="custom-text-muted">60%</span>
                                     </div>
                                     <progress value="60" max="100" aria-label="Java proficiency"
                                         style="width: 100%; height: 12px;"></progress>
                                 </div>
                                 <div class="col px-md-2 px-4 mt-md-4 mt-2">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h6 class="text-dark mb-0">SQL</h6>
-                                        <span class="text-muted">65%</span>
+                                        <h6 class="custom-text-dark mb-0">SQL</h6>
+                                        <span class="custom-text-muted">65%</span>
                                     </div>
                                     <progress value="65" max="100" aria-label="SQL proficiency"
                                         style="width: 100%; height: 12px;"></progress>
                                 </div>
                                 <div class="col px-md-2 px-4 mt-md-4 mt-2">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h6 class="text-dark mb-0">Firebase</h6>
-                                        <span class="text-muted">40%</span>
+                                        <h6 class="custom-text-dark mb-0">Firebase</h6>
+                                        <span class="custom-text-muted">40%</span>
                                     </div>
                                     <progress value="40" max="100" aria-label="Firebase proficiency"
                                         style="width: 100%; height: 12px;"></progress>
                                 </div>
                                 <div class="col px-md-2 px-4 mt-md-4 mt-2">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h6 class="text-dark mb-0">Git</h6>
-                                        <span class="text-muted">70%</span>
+                                        <h6 class="custom-text-dark mb-0">Git</h6>
+                                        <span class="custom-text-muted">70%</span>
                                     </div>
                                     <progress value="70" max="100" aria-label="Git proficiency"
                                         style="width: 100%; height: 12px;"></progress>
                                 </div>
                                 <div class="col px-md-2 px-4 mt-md-4 mt-2">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h6 class="text-dark mb-0">GitHub</h6>
-                                        <span class="text-muted">70%</span>
+                                        <h6 class="custom-text-dark mb-0">GitHub</h6>
+                                        <span class="custom-text-muted">70%</span>
                                     </div>
                                     <progress value="70" max="100" aria-label="GitHub proficiency"
                                         style="width: 100%; height: 12px;"></progress>
                                 </div>
                                 <div class="col px-md-2 px-4 mt-md-4 mt-2">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h6 class="text-dark mb-0">Unit Testing <span
-                                                class="smaller-font text-muted fw-normal">Jasmine+Karma</span></h6>
-                                        <span class="text-muted">90%</span>
+                                        <h6 class="custom-text-dark mb-0">Unit Testing <span
+                                                class="smaller-font custom-text-muted fw-normal">Jasmine+Karma</span></h6>
+                                        <span class="custom-text-muted">90%</span>
                                     </div>
                                     <progress value="90" max="100" aria-label="Unit Testing proficiency"
                                         style="width: 100%; height: 12px;"></progress>
                                 </div>
                                 <div class="col px-md-2 px-4 mt-md-4 mt-2">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h6 class="text-dark mb-0">Figma</h6>
-                                        <span class="text-muted">55%</span>
+                                        <h6 class="custom-text-dark mb-0">Figma</h6>
+                                        <span class="custom-text-muted">55%</span>
                                     </div>
                                     <progress value="55" max="100" aria-label="Figma proficiency"
                                         style="width: 100%; height: 12px;"></progress>
@@ -562,23 +562,17 @@
                                             <div class="d-flex flex-column gap-2">
                                                 <img src="assets/projects/eye-can-image1.png" alt="eye can 1"
                                                     class="img-fluid shadow project-img">
-                                                <!-- <img src="assets/projects/eye-can-image2.png" alt="eye can 2"
-                                                    class="img-fluid shadow project-img"> -->
                                             </div>
-                                            <!-- <div class="d-flex">
-                                                <img src="assets/projects/eye-can-ss.jpg" alt="eye can"
-                                                    class="img-fluid shadow project-img">
-                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12 mt-lg-0 mt-3">
                                         <div
-                                            class="d-flex flex-column gap-2 bg-white shadow p-3 position-relative border">
+                                            class="d-flex flex-column gap-2 custom-bg-white shadow p-3 position-relative border">
                                             <div class="position-absolute project-icon">
                                                 <img src="assets/projects/eyecan-logo.jpg" alt="eye can"
                                                     class="img-fluid rounded-5 shadow" width="50px">
                                             </div>
-                                            <h6 class="mb-2 text-dark text-start fw-bold">Eye Can Android
+                                            <h6 class="mb-2 custom-text-dark text-start fw-bold">Eye Can Android
                                                 Application
                                             </h6>
                                             <ul class="justified-text mb-2">
@@ -618,7 +612,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 d-none">
-                                        <h6 class="mb-2 d-md-block text-dark d-none">Eye Can Android Application</h6>
+                                        <h6 class="mb-2 d-md-block custom-text-dark d-none">Eye Can Android Application</h6>
                                         <ul class="justified-text mb-2">
                                             <li>
                                                 Built a voice-based exam app enabling visually impaired students to take
@@ -637,9 +631,9 @@
                                                 class="badge bg-primary-subtle text-primary fw-normal rounded-4 px-2">Low
                                                 code</span>
                                             <span
-                                                class="badge bg-secondary-subtle text-dark fw-normal rounded-4 px-2">Speech-to-Text</span>
+                                                class="badge bg-secondary-subtle custom-text-dark fw-normal rounded-4 px-2">Speech-to-Text</span>
                                             <span
-                                                class="badge bg-secondary-subtle text-dark fw-normal rounded-4 px-2">Text-to-Speech</span>
+                                                class="badge bg-secondary-subtle custom-text-dark fw-normal rounded-4 px-2">Text-to-Speech</span>
                                             <span
                                                 class="badge bg-success-subtle text-success fw-normal rounded-4 px-2">Accessibility</span>
                                             <span
@@ -661,19 +655,17 @@
                                             <div class="d-flex flex-column gap-2">
                                                 <img src="assets/projects/sidhdhars-image1.png" alt="sidhdhars.com"
                                                     class="img-fluid shadow project-img">
-                                                <!-- <img src="assets/projects/sidhdhars-image2.png" alt="sidhdhars.com"
-                                                    class="img-fluid shadow project-img"> -->
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12 mt-lg-0 mt-3">
                                         <div
-                                            class="d-flex flex-column gap-2 bg-white shadow p-3 position-relative border">
+                                            class="d-flex flex-column gap-2 custom-bg-white shadow p-3 position-relative border">
                                             <div class="position-absolute project-icon">
                                                 <img src="assets/projects/sidhdhars-logo.png" alt="sidhdhars.com"
-                                                    class="img-fluid rounded-5 shadow bg-white" width="50px">
+                                                    class="img-fluid rounded-5 shadow custom-bg-white" width="50px">
                                             </div>
-                                            <h6 class="mb-2 text-dark text-start fw-bold">Sidhdhars.com
+                                            <h6 class="mb-2 custom-text-dark text-start fw-bold">Sidhdhars.com
                                             </h6>
                                             <ul class="justified-text mb-2">
                                                 <li>
@@ -741,12 +733,12 @@
                                     </div>
                                     <div class="col-lg-6 col-12 mt-lg-0 mt-3">
                                         <div
-                                            class="d-flex flex-column gap-2 bg-white shadow p-3 position-relative border">
+                                            class="d-flex flex-column gap-2 custom-bg-white shadow p-3 position-relative border">
                                             <div class="position-absolute project-icon">
                                                 <img src="assets/projects/face-logo.png" alt="face attendance"
                                                     class="img-fluid rounded-5 shadow" width="50px">
                                             </div>
-                                            <h6 class="mb-2 text-dark text-start fw-bold">Face Attendance
+                                            <h6 class="mb-2 custom-text-dark text-start fw-bold">Face Attendance
                                             </h6>
                                             <ul class="justified-text mb-2">
                                                 <li>
@@ -803,19 +795,17 @@
                                             <div class="d-flex flex-column gap-2">
                                                 <img src="assets/projects/food-image1.png" alt="foood restaurant"
                                                     class="img-fluid shadow project-img">
-                                                <!-- <img src="assets/projects/food-image2.png" alt="foood restaurant"
-                                                    class="img-fluid shadow project-img"> -->
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12 mt-lg-0 mt-3">
                                         <div
-                                            class="d-flex flex-column gap-2 bg-white shadow p-3 position-relative border">
+                                            class="d-flex flex-column gap-2 custom-bg-white shadow p-3 position-relative border">
                                             <div class="position-absolute project-icon">
                                                 <img src="assets/projects/foood-logo.png" alt="foood restaurant"
                                                     class="img-fluid rounded-5 shadow" width="50px">
                                             </div>
-                                            <h6 class="mb-2 text-dark text-start fw-bold">Restaurant Mockup Site
+                                            <h6 class="mb-2 custom-text-dark text-start fw-bold">Restaurant Mockup Site
                                             </h6>
                                             <ul class="justified-text mb-2">
                                                 <li>
@@ -859,14 +849,59 @@
                         <!-----------------------restaurant end------------------>
                     </div>
                     <div class="col-10 d-flex justify-content-center gap-3 py-2 mt-2">
-                        <button class="btn border-0 text-primary fs-md-5 fs-4 px-3 shadow-sm py-0" id="prevBtn"
+                        <button class="btn border-0 text-primary fs-4 px-3 shadow-sm py-0" id="prevBtn"
                             title="Previous Button"><i class="bi bi-arrow-left"></i></button>
-                        <button class="btn border-0 text-primary fs-md-5 fs-4 px-3 shadow-sm py-0" id="nextBtn"
+                        <button class="btn border-0 text-primary fs-4 px-3 shadow-sm py-0" id="nextBtn"
                             title="Next Button"><i class="bi bi-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="py-5 custom-bg-light" id="contact">
+            <div class="container item">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-10">
+                        <h4 class="fw-bold mb-4 text-center">Contact</h4>
+                    </div>
+                    <div class="col-lg-6 d-md-block d-none">
+                        <div class="d-flex flex-column gap-3 align-items-center p-3">
+                            <img src="assets/contact.png" alt="computer" width="350px">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form">
+                            <div class="d-flex flex-column w-100 gap-2">
+                                <div class="d-flex gap-2">
+                                    <input class="form-control w-50" type="text" name="name" id="name"
+                                        placeholder="Enter your Name">
+                                    <input class="form-control w-50" type="text" name="company" id="company"
+                                        placeholder="Enter your Company Name">
+                                </div>
+                                <input class="form-control" type="text" name="emaibox" id="email"
+                                    placeholder="Enter your email ID">
+                                <textarea class="form-control contact-message" name="messagebox" id="mssg"
+                                    placeholder="Enter your message"></textarea>
+                                <button class="btn btn-primary w-auto">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                        <div class="d-flex justify-content-center gap-3">
+                            <img class="cursor-pointer" src="assets/linkedin.png" alt="linkedin" width="30px">
+                            <img class="cursor-pointer" src="assets/behance.png" alt="behance" width="30px">
+                            <img class="cursor-pointer" src="assets/github.png" alt="github" width="30px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <button class="position-fixed switch-theme z-3 border-0  custom-bg-light shadow-sm rounded-5 end-0 m-3 my-2">
+            <i class="bi bi-brightness-high fs-6 p-1 primary-text d-none text-white" style="line-height: 1.4em;"></i>
+            <i class="bi bi-moon fs-6 p-1 primary-text" style="line-height: 1.4em;"></i>
+        </button> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
