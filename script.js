@@ -68,6 +68,21 @@ function toggleExpEdu(section) {
 }
 
 const cards = document.querySelectorAll("#carousel-container .card-item");
+const cardWidth = window.innerWidth;
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.innerWidth < 992 && window.innerWidth > 576) {
+    cards.forEach(card => {
+      card.style.minWidth = `${cardWidth - 180}px`;
+      card.style.marginLeft = `10px`;
+    });
+  } else if (window.innerWidth <= 576 && window.innerWidth > 320) {
+    cards.forEach(card => {
+      card.style.minWidth = `${cardWidth - 40}px`;
+      card.style.marginLeft = `30px`;
+    });
+  }
+});
 const carousel = document.getElementById("carousel-container");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
@@ -80,13 +95,23 @@ function showCard(index) {
       card.classList.add("active");
     }
   });
-    carousel.style.transform = `translateX(-${index * 80}%)`;
+  getwindowWidth = window.innerWidth;
+  if (getwindowWidth < 769 && getwindowWidth > 576) {
+    carousel.style.transform = `translateX(-${index * cardWidth}px)`;
+  } else if (getwindowWidth <= 576 && window.innerWidth > 320) {
+    carousel.style.transform = `translateX(-${index * (cardWidth - 10)}px)`;
+  } else if (getwindowWidth <= 320) {
+    carousel.style.transform = `translateX(-${index * 270}px)`;
+  }
+  else {
+    carousel.style.transform = `translateX(-${index * 85}%)`;
+  }
 }
 showCard(currentIndex);
 
 nextBtn.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % cards.length;
-  console.log('currentIndex',currentIndex);
+  console.log('currentIndex', currentIndex);
   showCard(currentIndex);
 });
 
