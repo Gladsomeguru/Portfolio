@@ -22,6 +22,7 @@ body {
     max-height: calc(100vh - 56px) !important;
     overflow-y: auto;
     padding-bottom: 60px;
+    overflow-x: hidden !important;
 }
 
 .item {
@@ -30,13 +31,15 @@ body {
     animation-range: entry 0 cover 40%;
 }
 
-.exp-item,.edu-item {
+.exp-item,
+.edu-item {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity .8s ease, transform .8s ease;
 }
 
-.exp-item.show, .edu-item.show {
+.exp-item.show,
+.edu-item.show {
     opacity: 1;
     transform: translateY(0);
 }
@@ -139,24 +142,31 @@ body {
 
 
 #carousel-container {
-    min-height: 430px;
+    min-height: max-content;
+    transition: 0.3s ease-in-out;
 }
 
 .card-item {
-  display: none;         
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  opacity: 0;
-  transform: scale(0.9);
+    min-width: 270px;
+    flex-grow: 1;
+    opacity: 50%;
+    scale: .8;
+    transition: all 0.6s ease-in-out;
+}
+
+.card-item:nth-child(1) {
+    margin-left: 10%;
 }
 
 .card-item.active {
-  display: block;         
-  opacity: 1;
-  transform: scale(1);
+    opacity: 1;
+    scale: 1;
 }
 
 .project-img {
     transition: all 0.3s ease-in-out;
+    object-fit: cover;
+    aspect-ratio: 5/3;
 }
 
 .project-img:hover {
@@ -176,7 +186,7 @@ body {
 
 @keyframes fadeIn {
     from {
-        opacity: 10%;
+        opacity: 0%;
         scale: 0.5;
     }
 
@@ -195,5 +205,11 @@ body {
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card-item:nth-child(1) {
+        margin-left: 4px;
     }
 }

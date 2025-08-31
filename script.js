@@ -68,6 +68,7 @@ function toggleExpEdu(section) {
 }
 
 const cards = document.querySelectorAll("#carousel-container .card-item");
+const carousel = document.getElementById("carousel-container");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 let currentIndex = 0;
@@ -79,12 +80,13 @@ function showCard(index) {
       card.classList.add("active");
     }
   });
+    carousel.style.transform = `translateX(-${index * 80}%)`;
 }
-
 showCard(currentIndex);
 
 nextBtn.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % cards.length;
+  console.log('currentIndex',currentIndex);
   showCard(currentIndex);
 });
 
