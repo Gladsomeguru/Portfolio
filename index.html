@@ -15,7 +15,7 @@
 <body class="primary-text">
     <header class="position-sticky w-100 top-0 z-3">
         <nav class="navbar navbar-expand-lg custom-bg-light shadow-sm">
-            <div class="container-fluid">
+            <div class="container-fluid nav-menu">
                 <a class="navbar-brand fw-bold fs-4 primary-text" href="#home">Portfolio</a>
                 <button class="border-2 border rounded-2 bg-transparent d-lg-none " type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
@@ -61,8 +61,9 @@
                         <p>Turning Ideas into Interactive Web Experiences.<br>
                             Explore my journey, skills, and projects as a frontend developer!</p>
                         <div class="d-flex gap-2">
-                            <a href="#about" class="btn btn-primary">Hire me</a>
-                            <button class="btn btn-outline-primary">Download CV</button>
+                            <a href="mailto:gurunathanpachaiyappan@gmail.com" class="btn btn-primary">Hire me</a>
+                            <a href="assets/Gurunathan_P_SDE_Resume.pdf" download
+                                class="btn btn-outline-primary h-100">Download CV</a>
                         </div>
                     </div>
                 </div>
@@ -72,38 +73,60 @@
             <div class="container item">
                 <div class="row justify-content-center">
                     <div class="col-md-9">
-                        <h4 class="fw-bold mb-4">About <span class="secondary-text">Me</span></h4>
-                        <p class="px-md-0 px-3 justified-text">
+                        <h3 class="fw-bold mb-4">About <span class="secondary-text">Me</span></h3>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="ps-md-0 pe-md-4 px-3 justified-text">
                             I’m P. Gurunathan, a passionate Front-End Web Developer specializing in Angular, HTML, CSS,
                             JavaScript, SQL, and Figma. I focus on building modern, responsive, and user-friendly web
-                            applications that combine clean design with efficient and scalable code. <img
-                                src="assets/about_image.png" alt="Honoured by the Chief Minister of Tamil Nadu"
-                                width="200px" class="img-fluid mb-1 float-md-end float-start m-2 ms-md-2 ms-0 shadow">
-                        </p>
-
-                        <p class="px-md-0 px-3 justified-text">
+                            applications that combine clean design with efficient and scalable code.
                             With both professional and freelance experience, I have worked on projects for real clients,
                             delivering websites that emphasize usability, performance, and long-term value. In addition
                             to front-end development, I also bring hands-on experience in Android development and
                             backend integration, giving me a broader perspective on creating complete digital solutions.
                         </p>
-
+                    </div>
+                    <div class="col-md-4 px-md-0 px-3">
+                        <img src="assets/projects/eye-can-image1.png" alt="Honoured by the Chief Minister of Tamil Nadu"
+                            class="img-fluid p-3 shadow">
+                    </div>
+                    <div class="col-md-10 mt-4">
                         <p class="px-md-0 px-3 justified-text">
                             I co-invented <strong>EYE CAN</strong>, an innovative voice-based exam Android application
                             designed to make exams more accessible for visually impaired students.
                             This project was <strong>recognized by the Honorable Chief Minister of
                                 Tamil Nadu in 2022</strong> and reflects my passion for inclusivity and impactful
                             technology.
-                        </p>
-
-
-                        <p class="mb-0 px-md-0 px-3 justified-text">
                             Building on this innovation, I also <strong>published a patent</strong> titled
                             <em>“System and Approach for Interactive Examination for Visually Challenged Candidates in
                                 English and Tamil Languages”</em>
                             (Patent No: <strong>202241035046</strong>), showcasing my commitment to creating meaningful
                             digital solutions that inspire and deliver real value.
                         </p>
+                    </div>
+                    <div class="col-md-10 mt-4">
+                        <div class="d-flex justify-content-center flex-wrap gap-3 ps-md-0 pe-md-4">
+                            <div
+                                class="d-flex justify-content-between align-items-center rounded-2 w-auto gap-3 p-2 px-3 shadow">
+                                <h2 class="mb-0">1</h2>
+                                <h4 class="fw-medium secondary-text mb-0">Patent</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-between align-items-center rounded-2 w-auto gap-3 p-2 px-3 shadow">
+                                <h2 class="mb-0">5+</h2>
+                                <h4 class="fw-medium secondary-text mb-0">Technologies</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-between align-items-center rounded-2 w-auto gap-3 p-2 px-3 shadow">
+                                <h2 class="mb-0">10+</h2>
+                                <h4 class="fw-medium secondary-text mb-0">Projects</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-between align-items-center rounded-2 w-auto gap-3 p-2 px-3 shadow">
+                                <h2 class="mb-0">10000+</h2>
+                                <h4 class="fw-medium secondary-text mb-0">Lines of code</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,10 +136,10 @@
                 <div class="row justify-content-center">
                     <div class="col-md-10">
                         <div class="d-flex w-100 gap-2 justify-content-center align-items-center">
-                            <button class="border-0 bg-transparent fs-4 p-0 fw-bold mb-4 primary-text switch active"
+                            <button class="border-0 bg-transparent fs-3 p-0 fw-bold mb-4 primary-text switch active"
                                 id="exp-btn" onclick="toggleExpEdu('exp-container')">Experience</button>
-                            <h4 class="fw-bold mb-4 text-center text-nowrap secondary-text">&</h4>
-                            <button class="border-0 bg-transparent fs-4 p-0 fw-bold mb-4 primary-text switch"
+                            <h3 class="fw-bold mb-4 text-center text-nowrap secondary-text">&</h3>
+                            <button class="border-0 bg-transparent fs-3 p-0 fw-bold mb-4 primary-text switch"
                                 id="edu-btn" onclick="toggleExpEdu('edu-container')">Education</button>
                         </div>
                     </div>
@@ -266,10 +289,10 @@
                 <div class="row justify-content-center">
                     <div class="col-md-10">
                         <div class="d-flex w-100 gap-2 justify-content-center align-items-center">
-                            <button class="border-0 bg-transparent fs-4 p-0 fw-bold mb-4 primary-text switch"
+                            <button class="border-0 bg-transparent fs-3 p-0 fw-bold mb-4 primary-text switch"
                                 id="exp-btn" onclick="toggleExpEdu('exp-container')">Experience</button>
-                            <h4 class="fw-bold mb-4 text-center text-nowrap secondary-text">&</h4>
-                            <button class="border-0 bg-transparent fs-4 p-0 fw-bold mb-4 primary-text switch active"
+                            <h3 class="fw-bold mb-4 text-center text-nowrap secondary-text">&</h3>
+                            <button class="border-0 bg-transparent fs-3 p-0 fw-bold mb-4 primary-text switch active"
                                 id="edu-btn" onclick="toggleExpEdu('edu-container')">Education</button>
                         </div>
                     </div>
@@ -376,7 +399,7 @@
             <div class="container item">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
-                        <h4 class="fw-bold mb-4 text-center">Skills</h4>
+                        <h3 class="fw-bold mb-4 text-center">Skills</h3>
                     </div>
                     <div class="col-md-10">
                         <div
@@ -553,7 +576,7 @@
             <div class="container item">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
-                        <h4 class="fw-bold mb-4 text-center">Projects</h4>
+                        <h3 class="fw-bold mb-4 text-center">Projects</h3>
                     </div>
                     <div class="w-100 d-flex" id="carousel-container">
                         <!---------------eye can start----------------------->
@@ -865,21 +888,25 @@
             <div class="container">
                 <div class="row justify-content-center align-items-end">
                     <div class="col-lg-10">
-                        <h4 class="fw-bold mb-5 text-center">Contact</h4>
+                        <h3 class="fw-bold mb-5 text-center">Contact</h3>
                     </div>
-                    <div class="col-lg-6 px-md-0 px-4">
-                        <h1 class="fw-bold primary-text mb-4 justified-text">Let's <span
-                                class="secondary-text">Connect!</span></h1>
+                    <div class="col-lg-7 px-md-0 px-4">
+                        <h1 class="fw-bold primary-text mb-4">Connect with <span class="secondary-text">me</span> to
+                            build your next
+                            <span class="secondary-text">Website!</span>
+                        </h1>
                         <p><em>Open to exciting projects, collaborations, and career opportunities. Feel free to
                                 connect—I’d be glad to discuss how I can add value to you or your team.</em></p>
                         <p class="mb-4"><span class="fw-medium">Email: </span><a
                                 href="mailto:gurunathanpachaiyappan@gmail.com"
                                 class="text-decoration-none">gurunathanpachaiyappan@gmail.com</a></p>
                         <div class="d-flex gap-2 align-items-sm-center align-items-end flex-wrap">
-                            <a href="#about" class="btn btn-primary h-100">Hire me</a>
-                            <button class="btn btn-outline-primary h-100">Download CV</button>
+                            <a href="mailto:gurunathanpachaiyappan@gmail.com" class="btn btn-primary h-100">Hire me</a>
+                            <a href="assets/Gurunathan_P_SDE_Resume.pdf" download
+                                class="btn btn-outline-primary h-100">Download CV</a>
                             <div class="d-flex gap-3 align-items-center ms-sm-auto mt-sm-0 mt-3">
-                                <a href="https://www.linkedin.com/in/gurunathan-pachaiyappan-205140203/" target="_blank">
+                                <a href="https://www.linkedin.com/in/gurunathan-pachaiyappan-205140203/"
+                                    target="_blank">
                                     <img class="cursor-pointer p-1 shadow rounded-5 bg-white" src="assets/linkedin.png"
                                         alt="linkedin" width="40px">
                                 </a>

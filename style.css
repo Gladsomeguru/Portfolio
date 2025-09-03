@@ -277,6 +277,15 @@ body {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .nav-menu{
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        background-color: #F8F9FA;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    }
+}
 
 /* @media (prefers-color-scheme: dark) {
     :root {
