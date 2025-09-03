@@ -41,7 +41,7 @@ body {
 
 .wave-hand {
     display: inline-block;
-    animation: wave-shake 0.8s ease-in-out 1;
+    animation: wave-shake 1s ease-in-out 1;
     animation-delay: 1s;
     transform-origin: 70% 70%;
 }
