@@ -87,6 +87,20 @@ const carousel = document.getElementById("carousel-container");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 let currentIndex = 0;
+checkIndex();
+
+function checkIndex(){
+if (prevBtn) {
+  if (currentIndex === 0) {
+    prevBtn.classList.add('disabled');
+    prevBtn.classList.add('opacity-25');
+  } else {
+    prevBtn.classList.remove('disabled');
+    prevBtn.classList.remove('opacity-25');
+  }
+}
+}
+
 
 function showCard(index) {
   cards.forEach((card, i) => {
@@ -105,13 +119,10 @@ function showCard(index) {
   } else {
     carousel.style.transform = `translateX(-${index * 85}%)`;
   }
+  checkIndex();
 }
 showCard(currentIndex);
 
-// setInterval(() => {
-//   currentIndex = (currentIndex + 1) % cards.length;
-//   showCard(currentIndex);
-// }, 3000);
 
 nextBtn.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % cards.length;

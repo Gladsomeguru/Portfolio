@@ -50,23 +50,21 @@ body {
     0% {
         transform: scale(1) rotate(0deg);
     }
-
-    20% {
-        transform: scale(1.5) rotate(15deg);
+    15% {
+        transform: scale(3) rotate(14deg);
     }
-
-    40% {
-        transform: scale(1.5) rotate(-15deg);
+    30% {
+        transform: scale(2.8) rotate(-8deg);
     }
-
+    45% {
+        transform: scale(3) rotate(12deg);
+    }
     60% {
-        transform: scale(1.8) rotate(10deg);
+        transform: scale(2.8) rotate(-4deg);
     }
-
-    80% {
-        transform: scale(1.5) rotate(-10deg);
+    75% {
+        transform: scale(2.9) rotate(8deg);
     }
-
     100% {
         transform: scale(1) rotate(0deg);
     }
@@ -77,6 +75,19 @@ body {
     animation: fadeIn linear;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
+}
+
+.about-item{
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}
+.hero-social-link {
+    transition: all 0.2s ease-in;
+}
+
+.hero-social-link:hover {
+    scale: 1.2;
 }
 
 .exp-item,
@@ -278,12 +289,14 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-    .nav-menu{
+    .nav-menu {
         position: fixed;
         top: 0;
         z-index: 9999;
         background-color: #F8F9FA;
         box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+        padding-top: 4px;
+        padding-bottom: 4px;
     }
 }
 
