@@ -261,7 +261,7 @@ body {
 }
 
 .numbers{
-    columns: 100px;
+    columns: 150px;
 }
 
 @keyframes fadeIn {
@@ -290,8 +290,8 @@ body {
 
 @keyframes blurIn {
     from {
-        filter: blur(30px);
-        scale: .5;
+        filter: blur(20px);
+        scale: .8;
         opacity: 0;
     }
 
