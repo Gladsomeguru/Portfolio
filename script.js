@@ -123,7 +123,6 @@ function showCard(index) {
 }
 showCard(currentIndex);
 
-
 nextBtn.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % cards.length;
   console.log('currentIndex', currentIndex);
@@ -134,4 +133,15 @@ prevBtn.addEventListener("click", () => {
   currentIndex = (currentIndex - 1 + cards.length) % cards.length;
   showCard(currentIndex);
 });
+
+const cardObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      cards.forEach(card => card.classList.remove("active"));
+      entry.target.classList.add("active");
+    }
+  });
+}, { threshold: 0.5 });
+
+cards.forEach(card => cardObserver.observe(card));
 

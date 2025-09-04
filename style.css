@@ -50,21 +50,27 @@ body {
     0% {
         transform: scale(1) rotate(0deg);
     }
+
     15% {
         transform: scale(3) rotate(14deg);
     }
+
     30% {
         transform: scale(2.8) rotate(-8deg);
     }
+
     45% {
         transform: scale(3) rotate(12deg);
     }
+
     60% {
         transform: scale(2.8) rotate(-4deg);
     }
+
     75% {
         transform: scale(2.9) rotate(8deg);
     }
+
     100% {
         transform: scale(1) rotate(0deg);
     }
@@ -77,13 +83,13 @@ body {
     animation-range: entry 0 cover 40%;
 }
 
-.about-item{
+.about-item {
     animation: fadeIn linear;
     animation-timeline: view();
     animation-range: entry 0 cover 20%;
 }
 
-.project-item{
+.project-item {
     animation: blurIn linear;
     animation-timeline: view();
     animation-range: entry 0 cover 30%;
@@ -210,6 +216,7 @@ body {
 #carousel-container {
     min-height: max-content;
     transition: 0.3s ease-in-out;
+
 }
 
 .card-item {
@@ -259,7 +266,7 @@ body {
     top: 56px;
 }
 
-.numbers{
+.numbers {
     columns: 150px;
 }
 
@@ -324,9 +331,21 @@ body {
         padding-bottom: 4px;
     }
 
-    .content{
+    .content {
         margin-top: 35px !important;
         max-height: calc(100vh - 50px) !important;
     }
-}
 
+
+    #carousel-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-padding-left: 6%;
+        padding-bottom: 24px;
+    }
+
+    .card-item {
+        scroll-snap-align: center;
+        scroll-margin-left: 6%;
+    }
+}
