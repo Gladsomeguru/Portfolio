@@ -141,7 +141,7 @@ const cardObserver = new IntersectionObserver((entries) => {
       entry.target.classList.add("active");
     }
   });
-}, { threshold: 0.5 });
+}, { threshold: 0.8 });
 
 cards.forEach(card => cardObserver.observe(card));
 
