@@ -326,6 +326,7 @@ body {
 
     .content{
         margin-top: 35px !important;
+        max-height: calc(100vh - 50px) !important;
     }
 }
 
