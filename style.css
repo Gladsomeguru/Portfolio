@@ -37,6 +37,8 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    zoom: 100% !important;
+    resize: none !important;
 }
 
 .wave-hand {
