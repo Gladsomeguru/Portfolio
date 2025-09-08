@@ -88,7 +88,7 @@ body {
 .about-item {
     animation: fadeIn linear;
     animation-timeline: view();
-    animation-range: entry 0 cover 20%;
+    animation-range: entry 0 cover 40%;
 }
 
 .project-item {
@@ -321,6 +321,9 @@ body {
     .card-item:nth-child(1) {
         margin-left: 12px !important;
     }
+    .about-item {
+    animation-range: entry 0 cover 20%;
+}
 }
 
 @media screen and (max-width: 991px) {
