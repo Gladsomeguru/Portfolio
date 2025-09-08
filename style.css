@@ -185,7 +185,6 @@ body {
 .hero {
     overflow-x: hidden;
     animation: slideInLeft 1s ease-in-out forwards;
-    min-height: 100vh;
 }
 
 .switch {
