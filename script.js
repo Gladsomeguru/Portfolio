@@ -117,7 +117,7 @@ function showCard(index) {
   } else if (getwindowWidth <= 320) {
     carousel.style.transform = `translateX(-${index * 270}px)`;
   } else {
-    carousel.style.transform = `translateX(-${index * 85}%)`;
+    carousel.style.transform = `translateX(-${index * 86}%)`;
   }
   checkIndex();
 }

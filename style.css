@@ -227,6 +227,7 @@ body {
     opacity: 50%;
     scale: .8;
     transition: all 0.6s ease-in-out;
+    margin-left: 3%;
 }
 
 .card-item:nth-child(1) {
