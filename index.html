@@ -39,7 +39,7 @@
                             <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
+                            <a class="nav-link" href="#achievements">Achievements</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
@@ -111,7 +111,7 @@
                         <p class="px-md-0 px-3 justified-text">
                             I co-invented <strong>EYE CAN</strong>, an innovative voice-based exam Android application
                             designed to make exams more accessible for visually impaired students.
-                            This project was <strong>recognized by the Honorable Chief Minister of
+                            This project was recognized by the <strong>Honorable Chief Minister of
                                 Tamil Nadu in 2022</strong> and reflects my passion for inclusivity and impactful
                             technology.
                             Building on this innovation, I also <strong>published a patent</strong> titled
@@ -145,17 +145,17 @@
             </div>
         </section>
         <section class="py-5" id="experience">
-            <div class="container exp-container py-md-5" id="exp-container">
+            <div class="col-md-12 pt-md-5">
+                <div class="d-flex w-100 gap-2 justify-content-center align-items-center">
+                    <button class="border-0 bg-transparent fs-3 p-0 fw-bold mb-4 primary-text switch active"
+                        id="exp-btn" onclick="toggleExpEdu('exp-container')">Experience</button>
+                    <h3 class="fw-bold mb-4 text-center text-nowrap secondary-text">&</h3>
+                    <button class="border-0 bg-transparent fs-3 p-0 fw-bold mb-4 primary-text switch" id="edu-btn"
+                        onclick="toggleExpEdu('edu-container')">Education</button>
+                </div>
+            </div>
+            <div class="container exp-container pb-md-5" id="exp-container">
                 <div class="row justify-content-center">
-                    <div class="col-md-10">
-                        <div class="d-flex w-100 gap-2 justify-content-center align-items-center">
-                            <button class="border-0 bg-transparent fs-3 p-0 fw-bold mb-4 primary-text switch active"
-                                id="exp-btn" onclick="toggleExpEdu('exp-container')">Experience</button>
-                            <h3 class="fw-bold mb-4 text-center text-nowrap secondary-text">&</h3>
-                            <button class="border-0 bg-transparent fs-3 p-0 fw-bold mb-4 primary-text switch"
-                                id="edu-btn" onclick="toggleExpEdu('edu-container')">Education</button>
-                        </div>
-                    </div>
                     <div class="col-md-9 exp-item">
                         <div class="container px-0">
                             <div class="row w-100 px-0">
@@ -298,9 +298,9 @@
                     </div>
                 </div>
             </div>
-            <div class="container edu-container d-none" id="edu-container">
+            <div class="container edu-container pb-md-5 d-none" id="edu-container">
                 <div class="row justify-content-center">
-                    <div class="col-md-10">
+                    <!-- <div class="col-md-10">
                         <div class="d-flex w-100 gap-2 justify-content-center align-items-center">
                             <button class="border-0 bg-transparent fs-3 p-0 fw-bold mb-4 primary-text switch"
                                 id="exp-btn" onclick="toggleExpEdu('exp-container')">Experience</button>
@@ -308,7 +308,7 @@
                             <button class="border-0 bg-transparent fs-3 p-0 fw-bold mb-4 primary-text switch active"
                                 id="edu-btn" onclick="toggleExpEdu('edu-container')">Education</button>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-md-9 edu-item">
                         <div class="container px-0">
                             <div class="row w-100 px-0">
@@ -585,19 +585,26 @@
                 </div>
             </div>
         </section>
-        <section class="py-5" id="projects">
-            <div class="container project-item py-md-5">
-                <div class="row justify-content-center position-relative"> 
-                    <div class="d-lg-flex d-none justify-content-between gap-3 py-2 mt-md-2 mt-3 position-fixed z-3 w-100 top-50">
-                        <button class="btn border-0 text-primary fs-4 p-3 py-2 shadow rounded-5 bg-white" id="prevBtn"
+        <section class="py-5" id="achievements">
+            <div class="col-md-12 pt-md-5">
+                <div class="d-flex w-100 gap-2 justify-content-center align-items-center">
+                    <button class="border-0 bg-transparent fs-3 p-0 fw-bold mb-4 primary-text switch active"
+                        id="project-btn" onclick="toggleProCert('project-container')">Projects</button>
+                    <h3 class="fw-bold mb-4 text-center text-nowrap secondary-text">&</h3>
+                    <button class="border-0 bg-transparent fs-3 p-0 fw-bold mb-4 primary-text switch"
+                        id="certificate-btn" onclick="toggleProCert('certificate-container')">Certificates</button>
+                </div>
+            </div>
+            <div class="container project-item pb-md-5" id="project-container">
+                <div class="row justify-content-center position-relative">
+                    <div
+                        class="d-lg-flex d-none justify-content-between gap-3 py-2 mt-md-2 mt-3 position-fixed z-1 w-100 top-50">
+                        <button class="btn border-0 text-primary fs-4 p-3 py-2 shadow rounded-5 bg-white" id="prevBtn1"
                             title="Previous Button"><i class="bi bi-chevron-left"></i></button>
-                        <button class="btn border-0 text-primary fs-4 px-3 shadow py-0 rounded-5 bg-white" id="nextBtn"
+                        <button class="btn border-0 text-primary fs-4 px-3 shadow py-0 rounded-5 bg-white" id="nextBtn1"
                             title="Next Button"><i class="bi bi-chevron-right"></i></button>
                     </div>
-                    <div class="col-lg-10">
-                        <h3 class="fw-bold mb-4 text-center">Projects</h3>
-                    </div>
-                    <div class="w-100 d-flex" id="carousel-container">
+                    <div class="w-100 d-flex carousels" id="carousel-container-1">
                         <!---------------eye can start----------------------->
                         <div class="col-lg-10 mt-4 card-item">
                             <div class="container-fluid px-0">
@@ -623,16 +630,18 @@
                                             <ul class="justified-text mb-2">
                                                 <li>
                                                     Built a voice-based exam app using speech-to-text and
-                                                    text-to-speech, enabling visually impaired students to take exams
+                                                    text-to-speech, <strong>enabling visually impaired students</strong>
+                                                    to take exams
                                                     independently, while collaborating in a team of four to deliver an
                                                     inclusive solution for accessible education.
                                                 </li>
                                                 <li>
-                                                    This project has been published as a patent under the title “System
-                                                    and
-                                                    Approach for Interactive Examination for Visually Challenged
-                                                    Candidates
-                                                    in English and Tamil Languages.”</li>
+                                                    This project has been published as a <strong>patent</strong> under
+                                                    the title <em>“System
+                                                        and
+                                                        Approach for Interactive Examination for Visually Challenged
+                                                        Candidates
+                                                        in English and Tamil Languages.”</em></li>
                                                 <li><strong>Patent No:</strong> 202241035046</li>
                                             </ul>
                                             <div
@@ -711,19 +720,22 @@
                                                 <img src="assets/projects/sidhdhars-logo.png" alt="sidhdhars.com"
                                                     class="img-fluid rounded-5 shadow custom-bg-white" width="50px">
                                             </div>
-                                            <h6 class="mb-2 custom-text-dark text-start fw-bold">Sidhdhars.com
-                                            </h6>
+                                            <h6 class="mb-0 custom-text-dark text-start fw-bold">Sidhdhars.com
+                                            </h6><a href="https://www.sidhdhars.com" target="_blank">View project <i
+                                                    class="bi bi-arrow-right"></i></a>
                                             <ul class="justified-text mb-2">
                                                 <li>
-                                                    Revamped the client website with profiles, integrated map links,
-                                                    multilingual translations, and smart search filters for improved
+                                                    Revamped the client website with profiles, <strong>integrated map
+                                                        links,
+                                                        multilingual translations,</strong> and <strong>smart search
+                                                        filters</strong> for improved
                                                     usability to find Sidhdhars.
                                                 </li>
                                                 <li>
-                                                    Built a custom CMS and a location-based feature to find the nearest
+                                                    Built a custom <strong>CMS</strong> and a location-based feature to
+                                                    find the nearest
                                                     Sidhdhars.
                                                 </li>
-                                                <a href="https://www.sidhdhars.com" target="_blank">Sidhdhars.com</a>
                                             </ul>
                                             <div
                                                 class="d-flex gap-2 flex-wrap mt-2 justify-content-md-start justify-content-center">
@@ -789,12 +801,12 @@
                                             <ul class="justified-text mb-2">
                                                 <li>
                                                     Built the UI as an Associate Software Engineer at Group10,
-                                                    integrating
-                                                    RESTful APIs with recursive calls for continuous face tracking.
+                                                    integrating <strong>RESTful APIs</strong>
+                                                    with recursive calls for continuous face tracking.
                                                 </li>
                                                 <li>
-                                                    Implemented CRUD operations for student records and a live
-                                                    monitoring
+                                                    Implemented CRUD operations for student records and a <strong>live
+                                                        monitoring</strong>
                                                     module to display real-time camera activity.
                                                 </li>
                                             </ul>
@@ -851,8 +863,9 @@
                                                 <img src="assets/projects/foood-logo.png" alt="foood restaurant"
                                                     class="img-fluid rounded-5 shadow" width="50px">
                                             </div>
-                                            <h6 class="mb-2 custom-text-dark text-start fw-bold">Restaurant Mockup Site
-                                            </h6>
+                                            <h6 class="mb-0 custom-text-dark text-start fw-bold">Restaurant Mockup Site
+                                            </h6><a href="https://gladsomeguru.github.io/Restaurant_Website/"
+                                                target="_blank">View project <i class="bi bi-arrow-right"></i></a>
                                             <ul class="justified-text mb-2">
                                                 <li>
                                                     Designed a single-page responsive mock website to demonstrate modern
@@ -865,15 +878,12 @@
                                                     look and Enhanced user experience through clean layout and intuitive
                                                     interactions.
                                                 </li>
-                                                <a href="https://gladsomeguru.github.io/Restaurant_Website/"
-                                                    target="_blank">Foood Restaurant</a>
                                             </ul>
                                             <div
                                                 class="d-flex gap-2 flex-wrap mt-2 justify-content-md-start justify-content-center">
                                                 <span
                                                     class="badge bg-primary-subtle text-primary fw-normal rounded-4 px-2">Web
                                                     Application</span>
-
                                                 <span
                                                     class="badge bg-primary-subtle text-primary fw-normal rounded-4 px-2">HTML</span>
                                                 <span
@@ -893,6 +903,78 @@
                             </div>
                         </div>
                         <!-----------------------restaurant end------------------>
+                    </div>
+                </div>
+            </div>
+            <div class="container project-item d-none pb-md-5" id="certificate-container">
+                <div class="row justify-content-center position-relative">
+                    <div
+                        class="d-lg-flex d-none justify-content-between gap-3 py-2 mt-md-2 mt-3 position-fixed z-3 w-100 top-50">
+                        <button class="btn border-0 text-primary fs-4 p-3 py-2 shadow rounded-5 bg-white" id="prevBtn2"
+                            title="Previous Button"><i class="bi bi-chevron-left"></i></button>
+                        <button class="btn border-0 text-primary fs-4 px-3 shadow py-0 rounded-5 bg-white" id="nextBtn2"
+                            title="Next Button"><i class="bi bi-chevron-right"></i></button>
+                    </div>
+                    <div class="w-100 d-flex carousels" id="carousel-container-2">
+                        <div class="col-lg-10 mt-4 card-item">
+                            <div class="container-fluid px-0">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-lg-7">
+                                        <div class="d-flex flex-row gap-2 p-3 blue-border">
+                                            <div class="d-flex flex-column gap-2">
+                                                <img src="assets/certificates/Google prompting essentials.jpeg"
+                                                    alt="Google prompting Essentials"
+                                                    class="img-fluid shadow project-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-12 mt-lg-0 mt-3">
+                                        <div
+                                            class="d-flex flex-column gap-2 custom-bg-white shadow p-3 position-relative border">
+                                            <span>
+                                                <h6 class="mb-0 custom-text-dark text-start fw-bold">Google Prompting
+                                                    Essentials <span class="text-muted fw-medium text-nowrap">&bull; Sep 2025</span>
+                                                </h6>
+                                            </span>
+                                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/2RAYQ0MFWXSW"
+                                                target="_blank">View certificate <i class="bi bi-arrow-right"></i></a>
+                                            <ul class="mb-0">
+                                                <li>Earned the <strong>Google Prompting Essentials Certificate</strong>
+                                                    after completing four hands-on courses.</li>
+                                                <li>Built strong skills in <strong>AI prompting</strong> through
+                                                    practical training.</li>
+                                                <li>Developed expertise in designing effective prompts
+                                                    and applying advanced techniques.</li>
+                                                <li>Capable of solving complex tasks, performing
+                                                    <strong>data analysis</strong>, and generating clear
+                                                    summaries.
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="d-flex gap-2 flex-wrap mt-2 justify-content-md-start justify-content-center">
+                                                <span
+                                                    class="badge bg-primary-subtle text-primary fw-normal rounded-4 px-2">Prompt
+                                                    Engineering</span>
+                                                <span
+                                                    class="badge bg-primary-subtle text-primary fw-normal rounded-4 px-2">Multi-modal
+                                                    Prompting</span>
+                                                <span
+                                                    class="badge bg-primary-subtle text-primary fw-normal rounded-4 px-2">Prompt
+                                                    Chaining</span>
+                                                <span
+                                                    class="badge bg-secondary-subtle text-dark fw-normal rounded-4 px-2">Data
+                                                    Analysis</span>
+                                                <span
+                                                    class="badge bg-success-subtle text-success fw-normal rounded-4 px-2">Summarization</span>
+                                                <span
+                                                    class="badge bg-info-subtle text-info fw-normal rounded-4 px-2">Google
+                                                    Certificate</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -953,7 +1035,8 @@
                                 <a class="nav-link" href="#projects">Projects</a>
                             </li>
                         </ul>
-                        <p class="mb-1 fw-medium ps-2 text-center text-md-start">Designed & Developed by Gurunathan P</p>
+                        <p class="mb-1 fw-medium ps-2 text-center text-md-start">Designed & Developed by Gurunathan P
+                        </p>
                     </div>
                 </div>
             </div>

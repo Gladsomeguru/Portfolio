@@ -215,7 +215,7 @@ body {
 }
 
 
-#carousel-container {
+.carousels{
     min-height: max-content;
     transition: 0.3s ease-in-out;
 
@@ -272,6 +272,7 @@ body {
 .numbers {
     columns: 150px;
 }
+
 
 @keyframes fadeIn {
     from {
