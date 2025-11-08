@@ -316,6 +316,10 @@ body {
     .card-item:nth-child(1) {
         margin-left: 4px;
     }
+
+    .nav-buttons button{
+        background-color: transparent !important;
+    }
 }
 
 @media screen and (max-width: 769px) {
